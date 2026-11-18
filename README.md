@@ -27,6 +27,8 @@ strategy/
 │  └─ docs/
 │     ├─ program_trading_terms.md
 │     └─ program_trading_glossary.md
+├─ templates/
+│  └─ strategy_template.md
 └─ README.md
 ```
 
@@ -41,6 +43,7 @@ strategy/
 | `trend/long/` | 趨勢市場中的偏多策略。 |
 | `trend/short/` | 趨勢市場中的偏空策略。 |
 | `knowledge_base/docs/` | 基礎知識、術語、評估方法與策略管理筆記。 |
+| `templates/` | 策略文件模板與後續可重複使用的紀錄格式。 |
 
 後續單一策略可放在對應分類底下，例如：
 
@@ -68,6 +71,10 @@ consolidation/
 | `live` | 已上架，使用真實資金或正式交易流程運行。 |
 | `paused` | 暫停，策略暫時不上架但尚未淘汰。 |
 | `retired` | 已下架，策略不再使用或僅保留歷史紀錄。 |
+
+## 策略文件模板
+
+新增策略時，建議先複製 [策略模板](templates/strategy_template.md) 到對應分類資料夾，再依模板填寫策略假設、交易規則、風控、回測結果、樣本外驗證與上下架決策。
 
 ## 上架管理原則
 
@@ -121,6 +128,7 @@ consolidation/
 
 - [程式交易常用術語與策略評估指標](knowledge_base/docs/program_trading_terms.md)
 - [程式交易詳細術語表](knowledge_base/docs/program_trading_glossary.md)
+- [策略模板](templates/strategy_template.md)
 
 ## 後續可擴充方向
 
@@ -136,4 +144,3 @@ consolidation/
 ## 注意事項
 
 本專案內容用於策略研究、紀錄與管理，不構成投資建議。任何策略在實盤使用前，都應納入交易成本、滑價、流動性、資料品質、樣本外表現與風險承受能力評估。
-
